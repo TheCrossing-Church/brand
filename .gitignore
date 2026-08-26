@@ -2,8 +2,13 @@
 Thumbs.db
 *.tmp
 node_modules/
-# Never commit licensed font files to this public repo:
-fonts/*.otf
-fonts/*.ttf
-fonts/*.woff
-fonts/*.woff2
+
+# Never commit licensed font files to this public repo.
+# Patterns are repo-wide (not scoped to fonts/) so a font dropped into
+# logos/, assets/, or anywhere else is still blocked.
+# Licensed fonts live in the private TheCrossing-Church/brand-internal repo.
+*.otf
+*.ttf
+*.woff
+*.woff2
+*.eot
