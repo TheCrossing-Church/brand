@@ -1,0 +1,219 @@
+{
+  "$schema": "./schema/brand-kit.schema.json",
+  "version": "0.2.0",
+  "updated": "2026-08-26",
+  "status": "DRAFT. Colors, typography, and logo colorway names are taken from the official Brand Guides 2023. Verify font sourcing/licensing and add CMYK/Pantone for print before treating as fully authoritative.",
+  "source": "Brand Guides 2023 (The Crossing)",
+  "base_url": "https://raw.githubusercontent.com/TheCrossing-Church/brand/main",
+  "site_url": "https://brand.thecrossing.church",
+  "brand": {
+    "name": "The Crossing",
+    "legal_name": "The Crossing",
+    "mission": "Help people become fully devoted disciples of Christ by creating opportunities to explore truth, experience grace, and express love.",
+    "mission_pillars": ["explore truth", "experience grace", "express love"],
+    "website": "https://thecrossing.church",
+    "founded": null
+  },
+  "campuses": [
+    { "code": "CFD", "name": "Chesterfield" },
+    { "code": "FEN", "name": "Fenton" },
+    { "code": "GRT", "name": "Grant's Trail" },
+    { "code": "MID", "name": "Mid Rivers" }
+  ],
+  "color_system": {
+    "note": "The Crossing uses a broad, earthy palette. Primary colors are the brand identifiers and set the tone; secondary colors add contrast and emphasis; neutrals ground everything. CMYK/Pantone to be added from Brand Guides for print.",
+    "primary": {
+      "crossing_blue": { "name": "Crossing Blue", "hex": "#425964", "note": "The core brand color; the 'Limed Spruce' logo is this color." },
+      "ftl_ice_blue":  { "name": "FTL Ice Blue",  "hex": "#BFD9DA" },
+      "dark_plum":     { "name": "Dark Plum",     "hex": "#5F4750" },
+      "light_forest":  { "name": "Light Forest",  "hex": "#919C67" },
+      "quincy":        { "name": "Quincy",        "hex": "#754230" },
+      "burnt_orange":  { "name": "Burnt Orange",  "hex": "#AA6327" },
+      "corduroy":      { "name": "Corduroy",      "hex": "#61736E" },
+      "dark_spruce":   { "name": "Dark Spruce",   "hex": "#34474E" }
+    },
+    "secondary": {
+      "forest_green":  { "name": "Forest Green",  "hex": "#454823" },
+      "bright_teal":   { "name": "Bright Teal",   "hex": "#357676" },
+      "light_yellow":  { "name": "Light Yellow",  "hex": "#F4E4C6" },
+      "light_green":   { "name": "Light Green",   "hex": "#96A891" },
+      "lifeblood":     { "name": "Lifeblood",     "hex": "#A1302B" },
+      "golden_yellow": { "name": "Golden Yellow", "hex": "#E9C561" },
+      "nevada":        { "name": "Nevada",        "hex": "#5E727E" },
+      "dust":          { "name": "Dust",          "hex": "#AE8042" },
+      "dark_brown":    { "name": "Dark Brown",    "hex": "#56402F" },
+      "mule_brown":    { "name": "Mule Brown",    "hex": "#AB997F" }
+    },
+    "neutral": {
+      "armadillo":   { "name": "Armadillo",   "hex": "#3C3A36", "note": "Near-black; the 'Armadillo' logo is this color." },
+      "stone_path":  { "name": "Stone Path",  "hex": "#605D58" },
+      "overcast":    { "name": "Overcast",    "hex": "#848079" },
+      "ash":         { "name": "Ash",         "hex": "#A8A49B" },
+      "bison_hide":  { "name": "Bison Hide",  "hex": "#CBC4B8" },
+      "white":       { "name": "White",       "hex": "#FFFFFF" }
+    }
+  },
+  "typography": {
+    "note": "The Crossing uses distinct typefaces by role. Bariol is the body font — it is NOT the wordmark; the logo is set in Viga.",
+    "display": {
+      "family": "Bastia",
+      "styles": ["Bold", "Outline"],
+      "role": "Display / headlines — high character, used with restraint.",
+      "license": "Commercial. Confirm license and source before embedding on the web.",
+      "source": "internal"
+    },
+    "secondary": {
+      "family": "Neue Einstellung",
+      "role": "Secondary headings and dependable supporting text.",
+      "license": "Commercial. Confirm license and web-embedding rights.",
+      "source": "internal"
+    },
+    "logo": {
+      "family": "Viga",
+      "styles": ["Regular"],
+      "role": "The wordmark / logo lockup is set in Viga. For logo use only — do not use as general body or heading type.",
+      "license": "Viga is an open-source font (SIL Open Font License), available on Google Fonts.",
+      "source": "https://fonts.google.com/specimen/Viga"
+    },
+    "body": {
+      "family": "Bariol",
+      "styles": ["Regular", "Bold", "Italic", "Bold Italic"],
+      "role": "Main body font. Strikes the balance of legibility and subtle personality; keep to full paragraphs and running copy.",
+      "license": "Commercial (atipo foundry). The Crossing holds Desktop, Webfont, and App/OTT licenses. Desktop .otf files: install-only, keep in the private repo — do NOT commit to this public repo. Web: serve licensed .woff2 from the webfont package (do not convert the desktop .otf).",
+      "source": "internal",
+      "web": { "self_host_woff2": true, "note": "Serve from the webfont-license package on this one domain." }
+    },
+    "alt_body": {
+      "family": "Bastia",
+      "role": "Alternate body font, for callouts or when Bariol needs a break.",
+      "source": "internal"
+    },
+    "script": {
+      "family": "Hey August",
+      "role": "Accent script for occasional highlights and callouts. Sparingly.",
+      "license": "Commercial. Confirm license.",
+      "source": "internal"
+    },
+    "web_fallback_stack": "\"Nunito Sans\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+  },
+  "radius": { "none": "0", "sm": "4px", "md": "8px", "lg": "16px", "pill": "999px" },
+  "logos": {
+    "primary": "crossing.stacked.limed_spruce",
+    "clear_space_rule": "Leave generous white space around the logo so it feels special and stands out. Height of clear space = 2/3 × the margin (per Brand Guides). Do not size the logo to fill the available space.",
+    "colorways": {
+      "limed_spruce": { "name": "Limed Spruce", "file_key": "blue",  "color": "#425964", "primary": true, "use": "Primary logo. Use on white and light backgrounds." },
+      "armadillo":    { "name": "Armadillo",    "file_key": "black", "color": "#3C3A36", "use": "Alternate to Limed Spruce on white and very light backgrounds." },
+      "pure_white":   { "name": "Pure White",   "file_key": "white", "color": "#FFFFFF", "use": "Use on medium-to-dark backgrounds (often photographs)." }
+    },
+    "crossing": {
+      "description": "The Crossing master logo: an interlocking-rings icon with the wordmark. Primary lockup is the stacked version; use horizontal only where stacked will not fit.",
+      "lockups": {
+        "stacked": {
+          "primary": true,
+          "variants": {
+            "blue":  { "colorway": "limed_spruce", "png": "logos/crossing/crossing-stacked-blue.png",  "svg": "logos/crossing/crossing-stacked-blue.svg" },
+            "black": { "colorway": "armadillo",    "png": "logos/crossing/crossing-stacked-black.png", "svg": "logos/crossing/crossing-stacked-black.svg" },
+            "white": { "colorway": "pure_white",   "png": "logos/crossing/crossing-stacked-white.png", "svg": "logos/crossing/crossing-stacked-white.svg" }
+          }
+        },
+        "horizontal": {
+          "variants": {
+            "blue":  { "colorway": "limed_spruce", "png": "logos/crossing/crossing-horizontal-blue.png",  "svg": "logos/crossing/crossing-horizontal-blue.svg" },
+            "black": { "colorway": "armadillo",    "png": "logos/crossing/crossing-horizontal-black.png", "svg": "logos/crossing/crossing-horizontal-black.svg" },
+            "white": { "colorway": "pure_white",   "png": "logos/crossing/crossing-horizontal-white.png", "svg": "logos/crossing/crossing-horizontal-white.svg" }
+          }
+        },
+        "horizontal_url": {
+          "note": "Horizontal lockup with 'thecrossing.church' beneath the wordmark.",
+          "variants": {
+            "blue":  { "colorway": "limed_spruce", "png": "logos/crossing/crossing-horizontal-url-blue.png",  "svg": "logos/crossing/crossing-horizontal-url-blue.svg" },
+            "black": { "colorway": "armadillo",    "png": "logos/crossing/crossing-horizontal-url-black.png", "svg": "logos/crossing/crossing-horizontal-url-black.svg" },
+            "white": { "colorway": "pure_white",   "png": "logos/crossing/crossing-horizontal-url-white.png", "svg": "logos/crossing/crossing-horizontal-url-white.svg" }
+          }
+        },
+        "icon": {
+          "note": "Interlocking-rings mark only. Favicon, avatar, app icon.",
+          "variants": {
+            "blue":  { "colorway": "limed_spruce", "png": "logos/crossing/crossing-icon-blue.png",  "svg": "logos/crossing/crossing-icon-blue.svg" },
+            "black": { "colorway": "armadillo",    "png": "logos/crossing/crossing-icon-black.png", "svg": "logos/crossing/crossing-icon-black.svg" },
+            "white": { "colorway": "pure_white",   "png": "logos/crossing/crossing-icon-white.png", "svg": "logos/crossing/crossing-icon-white.svg" }
+          }
+        }
+      }
+    }
+  },
+  "sub_brands": {
+    "kids_crossing": {
+      "name": "KidsCrossing",
+      "abbr": "KC",
+      "description": "Children's ministry. Textured circle mark.",
+      "logos": {
+        "circle": {
+          "note": "Available formats vary by colorway (from the current asset set).",
+          "variants": {
+            "charcoal": { "png": "logos/kids-crossing/kc-circle-charcoal.png" },
+            "blue":     { "png": "logos/kids-crossing/kc-circle-blue.png" },
+            "white":    { "png": "logos/kids-crossing/kc-circle-white.png" },
+            "black":    { "svg": "logos/kids-crossing/kc-circle-black.svg" }
+          }
+        }
+      }
+    },
+    "youth_crossing": {
+      "name": "Youth Crossing",
+      "abbr": "YC",
+      "description": "Student ministry. 'YC' circle mark in several colorways, most with and without a grain texture.",
+      "note": "Grain PNGs are very large (7-8MB). Prefer SVG or the no-grain versions for screen/web.",
+      "logos": {
+        "circle": {
+          "variants": {
+            "black":                 { "png": "logos/youth-crossing/yc-black.png",                 "svg": "logos/youth-crossing/yc-black.svg" },
+            "black_and_white":       { "png": "logos/youth-crossing/yc-black-and-white.png",       "svg": "logos/youth-crossing/yc-black-and-white.svg" },
+            "cream":                 { "png": "logos/youth-crossing/yc-cream.png",                 "svg": "logos/youth-crossing/yc-cream.svg" },
+            "cream_no_grain":        { "png": "logos/youth-crossing/yc-cream-no-grain.png" },
+            "light_teal":            { "png": "logos/youth-crossing/yc-light-teal.png",            "svg": "logos/youth-crossing/yc-light-teal.svg" },
+            "light_teal_no_grain":   { "png": "logos/youth-crossing/yc-light-teal-no-grain.png" },
+            "teal":                  { "png": "logos/youth-crossing/yc-teal.png",                  "svg": "logos/youth-crossing/yc-teal.svg" },
+            "teal_no_grain":         { "png": "logos/youth-crossing/yc-teal-no-grain.png" },
+            "white":                 { "png": "logos/youth-crossing/yc-white.png",                 "svg": "logos/youth-crossing/yc-white.svg" },
+            "yellow":                { "png": "logos/youth-crossing/yc-yellow.png",                "svg": "logos/youth-crossing/yc-yellow.svg" },
+            "yellow_no_grain":       { "png": "logos/youth-crossing/yc-yellow-no-grain.png" },
+            "yellow_white":          { "png": "logos/youth-crossing/yc-yellow-white.png" },
+            "yellow_white_no_grain": { "png": "logos/youth-crossing/yc-yellow-white-no-grain.png" }
+          }
+        }
+      }
+    }
+  },
+  "voice": {
+    "pulse_words": ["Tangible", "Warmth", "Ancient / Future", "Artistic"],
+    "attributes": ["grace-first", "Christ-centered", "warm", "accessible", "plain and direct"],
+    "principles": [
+      "Reflect the mission language: explore truth, experience grace, express love.",
+      "Accessible to both long-time members and first-time guests.",
+      "Avoid theological jargon a newcomer would not understand.",
+      "Default to plain, direct language.",
+      "Tangible and warm; hold the ancient and the future together; leave room for the artistic."
+    ],
+    "avoid": ["insider jargon", "jargon-heavy theology", "cold or corporate tone"]
+  },
+  "rules": {
+    "primary_logo": "Use the stacked Limed Spruce logo unless the horizontal version is required to fit the space.",
+    "clear_space": "Give the logo generous surrounding space so it feels special; never size it to fill all available space.",
+    "donts": [
+      "Do not change the relationship (size/position) between the icon and the text.",
+      "Do not change the font of the wordmark.",
+      "Do not add text inside the logo's recommended clear-space margin.",
+      "Do not stretch or squash the logo.",
+      "Do not set the logo in a color that is not recommended (use Limed Spruce, Armadillo, or Pure White)."
+    ]
+  },
+  "governance": {
+    "source_of_truth": "This repository (TheCrossing-Church/brand). The Rock BrandCentral page should point here rather than maintain its own copy.",
+    "content_owner": "Creative / Communications team",
+    "pipeline_owner": "Rock / IT team",
+    "change_process": "Open a pull request. Brand/content changes are reviewed by the creative team via CODEOWNERS; IT reviews pipeline/build changes.",
+    "internal_assets": "Editable source files, licensed fonts (desktop .otf), and internal-only templates live in the private repo TheCrossing-Church/brand-internal and/or SharePoint.",
+    "review_cadence": "Review at least quarterly and on any brand change."
+  }
+}

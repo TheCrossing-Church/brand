@@ -1,0 +1,32 @@
+/* The Crossing — color tokens. Source: Brand Guides 2023. Add CMYK/Pantone for print. */
+:root {
+  /* Primary */
+  --tc-crossing-blue: #425964;
+  --tc-ftl-ice-blue:  #bfd9da;
+  --tc-dark-plum:     #5f4750;
+  --tc-light-forest:  #919c67;
+  --tc-quincy:        #754230;
+  --tc-burnt-orange:  #aa6327;
+  --tc-corduroy:      #61736e;
+  --tc-dark-spruce:   #34474e;
+
+  /* Secondary */
+  --tc-forest-green:  #454823;
+  --tc-bright-teal:   #357676;
+  --tc-light-yellow:  #f4e4c6;
+  --tc-light-green:   #96a891;
+  --tc-lifeblood:     #a1302b;
+  --tc-golden-yellow: #e9c561;
+  --tc-nevada:        #5e727e;
+  --tc-dust:          #ae8042;
+  --tc-dark-brown:    #56402f;
+  --tc-mule-brown:    #ab997f;
+
+  /* Neutral */
+  --tc-armadillo:  #3c3a36;
+  --tc-stone-path: #605d58;
+  --tc-overcast:   #848079;
+  --tc-ash:        #a8a49b;
+  --tc-bison-hide: #cbc4b8;
+  --tc-white:      #ffffff;
+}

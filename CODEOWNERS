@@ -1,0 +1,14 @@
+# Brand content is owned by Creative/Communications; the pipeline by Rock/IT.
+# Replace the placeholder handles/teams below with your real GitHub org teams.
+
+# Everything defaults to creative review
+*                       @TheCrossing-Church/creative
+
+# Build, CI, and deploy plumbing → IT
+/.github/               @TheCrossing-Church/it
+/schema/                @TheCrossing-Church/it
+/assets/                @TheCrossing-Church/it
+index.html              @TheCrossing-Church/it @TheCrossing-Church/creative
+
+# The machine-readable source of truth → both teams sign off
+brand-kit.json          @TheCrossing-Church/creative @TheCrossing-Church/it

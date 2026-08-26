@@ -1,0 +1,58 @@
+name: Validate brand-kit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validators
+        run: pip install jsonschema
+
+      - name: Validate brand-kit.json against schema
+        run: |
+          python - <<'PY'
+          import json, jsonschema
+          kit = json.load(open("brand-kit.json"))
+          schema = json.load(open("schema/brand-kit.schema.json"))
+          jsonschema.validate(kit, schema)
+          print("brand-kit.json is valid against the schema.")
+          PY
+
+      - name: Check every referenced asset file exists
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          kit = json.load(open("brand-kit.json"))
+          missing = []
+          def walk(o):
+              if isinstance(o, dict):
+                  for k, v in o.items():
+                      if k in ("png", "svg") and isinstance(v, str):
+                          if not os.path.exists(v):
+                              missing.append(v)
+                      else:
+                          walk(v)
+              elif isinstance(o, list):
+                  for v in o:
+                      walk(v)
+          walk(kit)
+          if missing:
+              print("Missing asset files referenced by brand-kit.json:")
+              for m in missing:
+                  print("  -", m)
+              # Placeholders phase: warn but do not fail. Flip to sys.exit(1) once real assets are added.
+              print("::warning::%d referenced asset(s) not found (expected during the placeholder phase)." % len(missing))
+          else:
+              print("All referenced assets exist.")
+          PY

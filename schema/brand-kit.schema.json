@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://brand.thecrossing.church/schema/brand-kit.schema.json",
+  "title": "The Crossing brand-kit",
+  "type": "object",
+  "required": ["version", "base_url", "brand", "color_system", "typography", "logos", "voice", "rules"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string" },
+    "updated": { "type": "string" },
+    "status": { "type": "string" },
+    "base_url": { "type": "string", "format": "uri" },
+    "site_url": { "type": "string", "format": "uri" },
+    "brand": {
+      "type": "object",
+      "required": ["name", "mission", "website"],
+      "properties": {
+        "name": { "type": "string" },
+        "legal_name": { "type": "string" },
+        "mission": { "type": "string" },
+        "mission_pillars": { "type": "array", "items": { "type": "string" } },
+        "website": { "type": "string", "format": "uri" },
+        "founded": { "type": ["string", "null"] }
+      }
+    },
+    "campuses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "name"],
+        "properties": { "code": { "type": "string" }, "name": { "type": "string" } }
+      }
+    },
+    "color_system": { "type": "object" },
+    "typography": { "type": "object", "required": ["body"] },
+    "radius": { "type": "object" },
+    "logos": { "type": "object", "required": ["primary", "crossing"] },
+    "sub_brands": { "type": "object" },
+    "voice": {
+      "type": "object",
+      "required": ["attributes", "principles"],
+      "properties": {
+        "attributes": { "type": "array", "items": { "type": "string" } },
+        "principles": { "type": "array", "items": { "type": "string" } },
+        "avoid": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "rules": {
+      "type": "object",
+      "required": ["donts"],
+      "properties": { "donts": { "type": "array", "items": { "type": "string" } } }
+    },
+    "governance": { "type": "object" }
+  }
+}

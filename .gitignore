@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.tmp
+node_modules/
+# Never commit licensed font files to this public repo:
+fonts/*.otf
+fonts/*.ttf
+fonts/*.woff
+fonts/*.woff2
