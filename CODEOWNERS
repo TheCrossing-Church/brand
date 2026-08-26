@@ -1,14 +1,14 @@
-# Brand content is owned by Creative/Communications; the pipeline by Rock/IT.
-# Replace the placeholder handles/teams below with your real GitHub org teams.
+# Brand content is owned by the Rock Team; the pipeline by IT.
+# Teams are live: rock-team owns brand content, it owns the build pipeline.
 
-# Everything defaults to creative review
-*                       @TheCrossing-Church/creative
+# Everything defaults to Rock Team review
+*                       @TheCrossing-Church/rock-team
 
 # Build, CI, and deploy plumbing → IT
 /.github/               @TheCrossing-Church/it
 /schema/                @TheCrossing-Church/it
 /assets/                @TheCrossing-Church/it
-index.html              @TheCrossing-Church/it @TheCrossing-Church/creative
+index.html              @TheCrossing-Church/it @TheCrossing-Church/rock-team
 
 # The machine-readable source of truth → both teams sign off
-brand-kit.json          @TheCrossing-Church/creative @TheCrossing-Church/it
+brand-kit.json          @TheCrossing-Church/rock-team @TheCrossing-Church/it
