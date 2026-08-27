@@ -168,9 +168,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     </g>
   </svg>
   <div class="wrap">
-    <span class="badge"><span class="dot"></span> Single source of truth · v0.1 draft</span>
+    <span class="badge"><span class="dot"></span> Single source of truth · v0.2</span>
     <h1>The Crossing brand, in one place.</h1>
-    <p class="lede">Logos, colors, type, and voice — kept current in Git, ready for people, scripts, and AI tools. Built for the Rock/IT team first, and made to be shared.</p>
+    <p class="lede">Logos, colors, type, and voice — kept current in Git, ready for people, scripts, and AI tools. Built for the Rock team first, and made to be shared.</p>
     <div class="pillars"><span>explore truth</span><span>experience grace</span><span>express love</span></div>
     <div class="cta-row">
       <a class="btn primary" href="#logos">Browse assets</a>
@@ -201,7 +201,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section id="colors"><div class="wrap">
   <div class="sec-head">
     <div><span class="eyebrow">Palette</span><h2>Colors</h2>
-    <p>Click any swatch to copy its hex. Values were sampled from the current BrandCentral page — confirm against Brand Guides 2023, and add CMYK/Pantone for print.</p></div>
+    <p>Click any swatch to copy its hex. Values come from the official Brand Guides 2023. CMYK/Pantone equivalents still need to be added for print.</p></div>
   </div>
   <div class="subhead">Primary</div>
   <div class="swatches" id="primaryColors"></div>
@@ -266,8 +266,8 @@ curl -s <span class="s">https://raw.githubusercontent.com/TheCrossing-Church/bra
 </main>
 
 <footer><div class="wrap">
-  <span>The Crossing · Brand — governed in <span class="mono">TheCrossing-Church/brand</span>. Content: Creative/Comms · Pipeline: Rock/IT.</span>
-  <span>Draft scaffold · Aug 2026</span>
+  <span>The Crossing · Brand — maintained in <span class="mono">TheCrossing-Church/brand</span> by the Rock team.</span>
+  <span>v0.2 · Aug 2026</span>
 </div></footer>
 
 <script>
@@ -289,7 +289,7 @@ function toast(m){const t=document.getElementById('toast');t.textContent=m;t.cla
 function copy(text,label){navigator.clipboard?.writeText(text).then(()=>toast(label||('Copied '+text))).catch(()=>toast('Copy failed'));}
 document.getElementById('copyKit').addEventListener('click',()=>copy(KIT_URL,'Copied brand-kit.json URL'));
 
-/* Logos (placeholder tiles) */
+/* Logos — real assets; ring() below is only the fallback if an image fails to load */
 const ring=(stroke)=>`<svg width="66" height="66" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="${stroke}" stroke-width="2.4"><circle cx="16" cy="14" r="11"/><circle cx="24" cy="14" r="11"/><circle cx="20" cy="24" r="11"/></g></svg>`;
 const crossingLogos=[
  {name:"Stacked · Limed Spruce",bg:"on-white",stroke:"#425964",src:"logos/crossing/crossing-stacked-blue.svg"},

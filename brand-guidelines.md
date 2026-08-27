@@ -2,7 +2,7 @@
 
 Human- and agent-readable guidance for using The Crossing's brand. For structured data (exact colors, logo paths, variants), see [`brand-kit.json`](brand-kit.json). For the full printed reference, see the official **Brand Guides 2023** (internal).
 
-> **Draft note:** color values below were sampled from the current BrandCentral page; confirm against Brand Guides 2023.
+> **Note:** color values below come from the official **Brand Guides 2023**. CMYK/Pantone equivalents still need to be added for print work.
 
 ## Who we are
 
@@ -82,4 +82,4 @@ Point AI tools at `brand-kit.json` + this file so they produce on-brand work. Al
 
 ## Questions / changes
 
-Brand content is owned by the Creative/Communications team; the repo pipeline by Rock/IT. Propose changes via pull request.
+The brand repo is owned by the Rock team (`@TheCrossing-Church/rock-team`). To change something, commit it to `main` in [`TheCrossing-Church/brand`](https://github.com/TheCrossing-Church/brand) — or open an issue there if you'd rather someone else make the change.

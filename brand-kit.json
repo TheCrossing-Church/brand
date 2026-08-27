@@ -1,8 +1,8 @@
 {
   "$schema": "./schema/brand-kit.schema.json",
   "version": "0.2.0",
-  "updated": "2026-08-26",
-  "status": "DRAFT. Colors, typography, and logo colorway names are taken from the official Brand Guides 2023. Verify font sourcing/licensing and add CMYK/Pantone for print before treating as fully authoritative.",
+  "updated": "2026-08-27",
+  "status": "IN USE. Colors, typography, and logo colorway names are taken from the official Brand Guides 2023, and the referenced logo assets are all present. Add CMYK/Pantone before treating this as authoritative for print.",
   "source": "Brand Guides 2023 (The Crossing)",
   "base_url": "https://raw.githubusercontent.com/TheCrossing-Church/brand/main",
   "site_url": "https://brand.thecrossing.church",
@@ -210,10 +210,9 @@
   },
   "governance": {
     "source_of_truth": "This repository (TheCrossing-Church/brand). The Rock BrandCentral page should point here rather than maintain its own copy.",
-    "content_owner": "Creative / Communications team",
-    "pipeline_owner": "Rock / IT team",
-    "change_process": "Open a pull request. Brand/content changes are reviewed by the creative team via CODEOWNERS; IT reviews pipeline/build changes.",
+    "owner": "Rock team (@TheCrossing-Church/rock-team) — owns both the brand content and the pipeline. CODEOWNERS assigns every path to this team. The IT team has read-only access and is not an owner.",
+    "change_process": "Commit directly to main. There is no branch protection and no required review today: changes are small enough to check in the diff and undo with 'git revert'. Pull requests are welcome but optional. See PRACTICES.md for the tighter process we intend to adopt later.",
     "internal_assets": "Editable source files, licensed fonts (desktop .otf), and internal-only templates live in the private repo TheCrossing-Church/brand-internal and/or SharePoint.",
-    "review_cadence": "Review at least quarterly and on any brand change."
+    "review_cadence": "Reviewed whenever the brand changes. A standing quarterly review is a goal, not yet a practice — see PRACTICES.md."
   }
 }
