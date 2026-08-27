@@ -147,6 +147,9 @@
       "name": "KidsCrossing",
       "abbr": "KC",
       "description": "Children's ministry. Textured circle mark.",
+      "representative": {
+        "png": "logos/kids-crossing/kc-circle-charcoal.png"
+      },
       "logos": {
         "circle": {
           "note": "Available formats vary by colorway (from the current asset set).",
@@ -163,6 +166,9 @@
       "name": "Youth Crossing",
       "abbr": "YC",
       "description": "Student ministry. 'YC' circle mark in several colorways, most with and without a grain texture.",
+      "representative": {
+        "png": "logos/youth-crossing/yc-teal-no-grain.png"
+      },
       "note": "Grain PNGs are very large (7-8MB). Prefer SVG or the no-grain versions for screen/web.",
       "logos": {
         "circle": {
@@ -206,7 +212,54 @@
       "Do not add text inside the logo's recommended clear-space margin.",
       "Do not stretch or squash the logo.",
       "Do not set the logo in a color that is not recommended (use Limed Spruce, Armadillo, or Pure White)."
-    ]
+    ],
+    "examples": {
+      "note": "Self-contained SVG tiles that illustrate the rules above — no external references, so they render anywhere (GitHub, the brand site, a deck, an email). Regenerate with samples/logo-usage/generate.py if the logo files change.",
+      "do": [
+        {
+          "id": "primary-stacked",
+          "caption": "Stacked logo in Limed Spruce on white, with generous clear space.",
+          "svg": "samples/logo-usage/do-primary-stacked.svg"
+        },
+        {
+          "id": "white-on-dark",
+          "caption": "Pure White on a dark background or photograph.",
+          "svg": "samples/logo-usage/do-white-on-dark.svg"
+        },
+        {
+          "id": "horizontal-tight",
+          "caption": "Horizontal lockup where the stacked version will not fit.",
+          "svg": "samples/logo-usage/do-horizontal-tight.svg"
+        }
+      ],
+      "dont": [
+        {
+          "id": "relationship",
+          "rule": "Do not change the relationship (size/position) between the icon and the text.",
+          "svg": "samples/logo-usage/dont-relationship.svg"
+        },
+        {
+          "id": "wordmark-font",
+          "rule": "Do not change the font of the wordmark.",
+          "svg": "samples/logo-usage/dont-wordmark-font.svg"
+        },
+        {
+          "id": "clear-space",
+          "rule": "Do not add text inside the logo's recommended clear-space margin.",
+          "svg": "samples/logo-usage/dont-clear-space.svg"
+        },
+        {
+          "id": "stretch",
+          "rule": "Do not stretch or squash the logo.",
+          "svg": "samples/logo-usage/dont-stretch.svg"
+        },
+        {
+          "id": "color",
+          "rule": "Do not set the logo in a color that is not recommended (use Limed Spruce, Armadillo, or Pure White).",
+          "svg": "samples/logo-usage/dont-color.svg"
+        }
+      ]
+    }
   },
   "governance": {
     "source_of_truth": "This repository (TheCrossing-Church/brand). The Rock BrandCentral page should point here rather than maintain its own copy.",

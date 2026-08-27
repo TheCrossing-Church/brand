@@ -36,6 +36,26 @@ The master logo pairs an interlocking-rings **icon** with the **wordmark**. The 
 4. Don't stretch or squash the logo.
 5. Don't set the logo in a color that isn't recommended (Limed Spruce, Armadillo, or Pure White only).
 
+### See it
+
+Worked examples live in [`samples/logo-usage/`](samples/logo-usage/) — self-contained SVGs you can
+drop into a deck or an email when someone needs showing rather than telling.
+
+**Do**
+
+| | |
+|---|---|
+| <img src="samples/logo-usage/do-primary-stacked.svg" alt="Do: stacked logo in Limed Spruce on white with generous clear space" width="420"> | <img src="samples/logo-usage/do-white-on-dark.svg" alt="Do: Pure White logo on a dark background" width="420"> |
+| <img src="samples/logo-usage/do-horizontal-tight.svg" alt="Do: horizontal lockup in a short, wide space" width="420"> | |
+
+**Don't** — one example per rule above
+
+| | |
+|---|---|
+| <img src="samples/logo-usage/dont-relationship.svg" alt="Don't: icon and wordmark rearranged and resized against each other" width="420"> | <img src="samples/logo-usage/dont-wordmark-font.svg" alt="Don't: wordmark re-typed in another font" width="420"> |
+| <img src="samples/logo-usage/dont-clear-space.svg" alt="Don't: headline text crowding the logo's clear space" width="420"> | <img src="samples/logo-usage/dont-stretch.svg" alt="Don't: logo stretched and squashed" width="420"> |
+| <img src="samples/logo-usage/dont-color.svg" alt="Don't: logo set in an unapproved color" width="420"> | |
+
 ## Color
 
 The Crossing uses a broad, earthy palette. **Primary** colors are the brand identifiers and set the tone; **secondary** colors add contrast and emphasis; **neutrals** ground everything. Exact hex values for all 24 named colors are in [`brand-kit.json`](brand-kit.json) and [`colors/`](colors/).
@@ -65,11 +85,31 @@ The Crossing uses distinct typefaces by role. **Bariol is the body font — not 
 
 ## Sub-brands
 
-**KidsCrossing (KC)** — children's ministry. Textured circle mark in charcoal, blue, white, or black.
+Each ministry has its own mark — not a restyled Crossing logo.
 
-**Youth Crossing (YC)** — student ministry. "YC" circle mark in a range of colorways (teal, light teal, cream, yellow, black, white), most available with or without a grain texture.
+| | KidsCrossing (KC) | Youth Crossing (YC) |
+|---|---|---|
+| | <img src="logos/kids-crossing/kc-circle-charcoal.png" alt="KidsCrossing circle mark in charcoal" width="150"> | <img src="logos/youth-crossing/yc-teal-no-grain.png" alt="Youth Crossing YC mark in teal" width="150"> |
+| **Ministry** | Children's ministry | Student ministry |
+| **Mark** | Textured circle with the words *kids crossing* | Offset circle with "YC" |
+| **Colorways** | charcoal · blue · white · black | teal · light teal · cream · yellow · black · white · yellow-on-white |
+| **Texture** | Grain is part of the mark | Most colorways come with **and** without grain |
+
+**KidsCrossing colorways**
+
+<img src="logos/kids-crossing/kc-circle-charcoal.png" alt="charcoal" width="76"> <img src="logos/kids-crossing/kc-circle-blue.png" alt="blue" width="76">
+
+*(A white version, `kc-circle-white.png`, is for dark backgrounds — it's invisible here on white.)*
+
+**Youth Crossing colorways** (no-grain versions shown)
+
+<img src="logos/youth-crossing/yc-teal-no-grain.png" alt="teal" width="76"> <img src="logos/youth-crossing/yc-light-teal-no-grain.png" alt="light teal" width="76"> <img src="logos/youth-crossing/yc-cream-no-grain.png" alt="cream" width="76"> <img src="logos/youth-crossing/yc-yellow-no-grain.png" alt="yellow" width="76">
 
 Sub-brands keep their own colorways; don't recolor them into the main Crossing palette or vice-versa.
+The five logo don'ts above apply to these marks too.
+
+**File-size note.** The grain PNGs are 7–8 MB. For anything on screen — web, slides, email — use the
+`*-no-grain.png` or the SVG. Save the grain versions for print.
 
 ## Getting assets
 

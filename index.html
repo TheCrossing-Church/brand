@@ -106,6 +106,19 @@ section{padding:64px 0;border-bottom:1px solid var(--border)}
 .dont p{margin:0;font-size:.94rem}
 .clearspace{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-top:18px;font-size:.95rem}
 
+/* Do / don't example tiles */
+.ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:860px){.ex-grid{grid-template-columns:1fr}}
+.ex-grid img{display:block;width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* Sub-brand marks */
+.sub-mark{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:16px}
+.sub-mark img{width:130px;height:auto}
+.sub-strip{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.sub-strip .chip{display:inline-flex;padding:7px;border-radius:10px;background:var(--surface-2);border:1px solid var(--border)}
+.sub-strip .chip.dark{background:var(--ink);border-color:var(--ink)}
+.sub-strip img{width:44px;height:auto;display:block}
+
 /* Dev / code */
 .code{background:#10181c;color:#d7e2e5;border-radius:var(--radius);padding:18px 20px;font-family:var(--mono);font-size:.82rem;overflow-x:auto;border:1px solid var(--border)}
 .code .k{color:var(--yc-yellow)} .code .s{color:var(--yc-light)} .code .c{color:#7f9aa2}
@@ -225,18 +238,32 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section id="sub"><div class="wrap">
   <div class="sec-head">
     <div><span class="eyebrow">Ministries</span><h2>Sub-brands</h2>
-    <p>KidsCrossing and Youth Crossing keep their own colorways — don't recolor them into the core palette.</p></div>
+    <p>KidsCrossing and Youth Crossing have their own marks and their own colorways — don't recolor them into the core palette, or the core logo into theirs.</p></div>
   </div>
   <div class="two">
     <div class="card">
       <span class="role">KC · children's ministry</span>
+      <div class="sub-mark"><img src="logos/kids-crossing/kc-circle-charcoal.png" alt="KidsCrossing circle mark in charcoal"></div>
       <h3>KidsCrossing</h3>
       <p>Textured circle mark in charcoal, blue, white, or black.</p>
+      <div class="sub-strip">
+        <span class="chip"><img src="logos/kids-crossing/kc-circle-charcoal.png" alt="charcoal"></span>
+        <span class="chip"><img src="logos/kids-crossing/kc-circle-blue.png" alt="blue"></span>
+        <span class="chip dark"><img src="logos/kids-crossing/kc-circle-white.png" alt="white, shown on dark"></span>
+      </div>
     </div>
     <div class="card">
       <span class="role">YC · student ministry</span>
+      <div class="sub-mark"><img src="logos/youth-crossing/yc-teal-no-grain.png" alt="Youth Crossing YC mark in teal"></div>
       <h3>Youth Crossing</h3>
       <p>"YC" circle mark across teal, light teal, cream, yellow, black, and white — most with and without a grain texture.</p>
+      <div class="sub-strip">
+        <span class="chip"><img src="logos/youth-crossing/yc-teal-no-grain.png" alt="teal"></span>
+        <span class="chip"><img src="logos/youth-crossing/yc-light-teal-no-grain.png" alt="light teal"></span>
+        <span class="chip"><img src="logos/youth-crossing/yc-cream-no-grain.png" alt="cream"></span>
+        <span class="chip"><img src="logos/youth-crossing/yc-yellow-no-grain.png" alt="yellow"></span>
+        <span class="chip dark"><img src="logos/youth-crossing/yc-yellow-white-no-grain.png" alt="yellow and white, shown on dark"></span>
+      </div>
     </div>
   </div>
 </div></section>
@@ -245,10 +272,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section id="rules"><div class="wrap">
   <div class="sec-head">
     <div><span class="eyebrow">Usage</span><h2>Guidelines</h2>
-    <p>Five things never to do to the logo.</p></div>
+    <p>Five things never to do to the logo — with worked examples underneath.</p></div>
   </div>
   <div class="don-grid" id="donts"></div>
   <div class="clearspace"><strong style="font-family:var(--display)">Clear space.</strong> Give the logo generous surrounding space so it feels special and stands out — don't size it to fill all the available room.</div>
+
+  <div class="subhead">Do</div>
+  <div class="ex-grid">
+    <img src="samples/logo-usage/do-primary-stacked.svg" alt="Do: stacked logo in Limed Spruce on white, with generous clear space around it">
+    <img src="samples/logo-usage/do-white-on-dark.svg" alt="Do: Pure White logo on a dark background">
+    <img src="samples/logo-usage/do-horizontal-tight.svg" alt="Do: horizontal lockup used in a short, wide space">
+  </div>
+
+  <div class="subhead">Don't</div>
+  <div class="ex-grid">
+    <img src="samples/logo-usage/dont-relationship.svg" alt="Don't: icon and wordmark rearranged and resized against each other">
+    <img src="samples/logo-usage/dont-wordmark-font.svg" alt="Don't: wordmark re-typed in a different font">
+    <img src="samples/logo-usage/dont-clear-space.svg" alt="Don't: headline text crowding into the logo's clear space">
+    <img src="samples/logo-usage/dont-stretch.svg" alt="Don't: logo stretched and squashed out of proportion">
+    <img src="samples/logo-usage/dont-color.svg" alt="Don't: logo set in an unapproved color">
+  </div>
 </div></section>
 
 <!-- DEV / AI -->

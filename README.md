@@ -55,7 +55,7 @@ logos/                  crossing/ · kids-crossing/ · youth-crossing/
 colors/                 Color tokens (CSS/SCSS)
 fonts/                  (no font files — Bariol is licensed; see guidelines)
 campuses/               CFD · FEN · GRT · MID (as needed)
-samples/                Do / don't examples
+samples/                logo-usage/ — do / don't example tiles (SVG)
 schema/                 JSON Schema for brand-kit.json
 ```
 
