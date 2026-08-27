@@ -111,6 +111,18 @@ section{padding:64px 0;border-bottom:1px solid var(--border)}
 @media(max-width:860px){.ex-grid{grid-template-columns:1fr}}
 .ex-grid img{display:block;width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
 
+/* Sub-brand blocks */
+.brandblock{margin-top:30px}
+.brandblock+.brandblock{margin-top:42px;padding-top:36px;border-top:1px solid var(--border)}
+.brandhead{display:flex;gap:26px;align-items:flex-start;margin-bottom:20px}
+@media(max-width:720px){.brandhead{flex-direction:column;gap:18px}}
+.brandhead .sub-mark{flex:0 0 auto;margin-bottom:0}
+.brandmeta{min-width:0}
+.brandmeta .role{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);display:block;margin-bottom:10px}
+.brandmeta h3{font-size:1.15rem;margin:0 0 8px}
+.brandmeta p{margin:0;color:var(--muted);font-size:.93rem;max-width:62ch}
+.filenote{margin-top:14px !important;font-size:.85rem !important}
+
 /* Sub-brand marks */
 .sub-mark{display:flex;align-items:center;justify-content:center;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:16px}
 .sub-mark img{width:130px;height:auto}
@@ -162,7 +174,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       The Crossing · Brand
     </span>
     <nav class="links">
-      <a href="#logos">Logos</a>
+      <a href="#logos">Logo</a>
       <a href="#colors">Colors</a>
       <a href="#type">Type</a>
       <a href="#sub">Sub-brands</a>
@@ -199,15 +211,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <!-- LOGOS -->
 <section id="logos"><div class="wrap">
   <div class="sec-head">
-    <div><span class="eyebrow">Marks</span><h2>Logos</h2>
-    <p>The <strong>stacked Limed Spruce</strong> lockup is primary — use it unless it won't fit, then use horizontal. Every Crossing lockup ships in three colorways as SVG and PNG.</p></div>
+    <div><span class="eyebrow">The master mark</span><h2>Logo</h2>
+    <p>The <strong>stacked Limed Spruce</strong> lockup is primary — use it unless it won't fit, then use horizontal. Every Crossing lockup ships in three colorways as SVG and PNG. The ministry marks have their own colorways — see <a href="#sub">Sub-brands</a>.</p></div>
   </div>
-  <div class="subhead">The Crossing</div>
   <div class="logo-grid" id="logoCrossing"></div>
-  <div class="subhead">KidsCrossing</div>
-  <div class="logo-grid" id="logoKC"></div>
-  <div class="subhead">Youth Crossing</div>
-  <div class="logo-grid" id="logoYC"></div>
 </div></section>
 
 <!-- COLORS -->
@@ -238,33 +245,45 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section id="sub"><div class="wrap">
   <div class="sec-head">
     <div><span class="eyebrow">Ministries</span><h2>Sub-brands</h2>
-    <p>KidsCrossing and Youth Crossing have their own marks and their own colorways — don't recolor them into the core palette, or the core logo into theirs.</p></div>
+    <p>KidsCrossing and Youth Crossing each have their own mark and their own colorways. Don't recolor a ministry mark into the core palette, or the core logo into theirs — and note that the three approved Crossing colorways don't apply here. The five logo don'ts do.</p></div>
   </div>
-  <div class="two">
-    <div class="card">
-      <span class="role">KC · children's ministry</span>
+
+  <div class="brandblock">
+    <div class="brandhead">
       <div class="sub-mark"><img src="logos/kids-crossing/kc-circle-charcoal.png" alt="KidsCrossing circle mark in charcoal"></div>
-      <h3>KidsCrossing</h3>
-      <p>Textured circle mark in charcoal, blue, white, or black.</p>
-      <div class="sub-strip">
-        <span class="chip"><img src="logos/kids-crossing/kc-circle-charcoal.png" alt="charcoal"></span>
-        <span class="chip"><img src="logos/kids-crossing/kc-circle-blue.png" alt="blue"></span>
-        <span class="chip dark"><img src="logos/kids-crossing/kc-circle-white.png" alt="white, shown on dark"></span>
+      <div class="brandmeta">
+        <span class="role">KC · children's ministry</span>
+        <h3>KidsCrossing</h3>
+        <p>Textured circle mark. The grain is part of the mark — don't clean it up or redraw it.</p>
+        <div class="sub-strip">
+          <span class="chip"><img src="logos/kids-crossing/kc-circle-charcoal.png" alt="charcoal"></span>
+          <span class="chip"><img src="logos/kids-crossing/kc-circle-blue.png" alt="blue"></span>
+          <span class="chip dark"><img src="logos/kids-crossing/kc-circle-white.png" alt="white, shown on dark"></span>
+        </div>
+        <p class="filenote">Charcoal · blue · white · black. The PNGs are ~28&nbsp;KB each; <span class="mono">kc-circle-black.svg</span> is a 600&nbsp;KB traced file, so reach for a PNG on screen.</p>
       </div>
     </div>
-    <div class="card">
-      <span class="role">YC · student ministry</span>
+    <div class="logo-grid" id="logoKC"></div>
+  </div>
+
+  <div class="brandblock">
+    <div class="brandhead">
       <div class="sub-mark"><img src="logos/youth-crossing/yc-teal-no-grain.png" alt="Youth Crossing YC mark in teal"></div>
-      <h3>Youth Crossing</h3>
-      <p>"YC" circle mark across teal, light teal, cream, yellow, black, and white — most with and without a grain texture.</p>
-      <div class="sub-strip">
-        <span class="chip"><img src="logos/youth-crossing/yc-teal-no-grain.png" alt="teal"></span>
-        <span class="chip"><img src="logos/youth-crossing/yc-light-teal-no-grain.png" alt="light teal"></span>
-        <span class="chip"><img src="logos/youth-crossing/yc-cream-no-grain.png" alt="cream"></span>
-        <span class="chip"><img src="logos/youth-crossing/yc-yellow-no-grain.png" alt="yellow"></span>
-        <span class="chip dark"><img src="logos/youth-crossing/yc-yellow-white-no-grain.png" alt="yellow and white, shown on dark"></span>
+      <div class="brandmeta">
+        <span class="role">YC · student ministry</span>
+        <h3>Youth Crossing</h3>
+        <p>"YC" circle mark. Most colorways come both with and without a grain texture.</p>
+        <div class="sub-strip">
+          <span class="chip"><img src="logos/youth-crossing/yc-teal-no-grain.png" alt="teal"></span>
+          <span class="chip"><img src="logos/youth-crossing/yc-light-teal-no-grain.png" alt="light teal"></span>
+          <span class="chip"><img src="logos/youth-crossing/yc-cream-no-grain.png" alt="cream"></span>
+          <span class="chip"><img src="logos/youth-crossing/yc-yellow-no-grain.png" alt="yellow"></span>
+          <span class="chip dark"><img src="logos/youth-crossing/yc-yellow-white-no-grain.png" alt="yellow and white, shown on dark"></span>
+        </div>
+        <p class="filenote">Teal · light teal · cream · yellow · black · white · yellow-on-white. <strong>The grain PNGs run 6.7–7.7&nbsp;MB.</strong> For anything on screen use the <span class="mono">*-no-grain.png</span> (~24&nbsp;KB) or the SVG; save the grain files for print.</p>
       </div>
     </div>
+    <div class="logo-grid" id="logoYC"></div>
   </div>
 </div></section>
 

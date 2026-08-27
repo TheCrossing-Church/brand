@@ -26,6 +26,8 @@ The master logo pairs an interlocking-rings **icon** with the **wordmark**. The 
 | **Armadillo** (alternate) | `#3C3A36` | white & very light backgrounds |
 | **Pure White** | `#FFFFFF` | medium-to-dark backgrounds (often photos) |
 
+These three govern the **master logo only**. KidsCrossing and Youth Crossing have their own colorways — see [Sub-brands](#sub-brands).
+
 **Clear space.** Give the logo generous surrounding space so it feels special and stands out. Don't size it to fill all the available room.
 
 ### The five don'ts
