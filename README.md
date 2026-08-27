@@ -49,7 +49,7 @@ index.html              The rendered site (GitHub Pages)
 CNAME                   Custom domain for Pages (brand.thecrossing.church)
 CODEOWNERS              Review routing — everything to @TheCrossing-Church/rock-team
 ROLLOUT.md              Setup runbook: what's done, what's still open
-PRACTICES.md            How we work today, and what we'd like to grow into
+PRACTICES.md            How to change the brand, and how to undo a change
 .github/workflows/      CI — validates brand-kit.json and its asset references
 logos/                  crossing/ · kids-crossing/ · youth-crossing/
 colors/                 Color tokens (CSS/SCSS)
@@ -67,7 +67,7 @@ schema/                 JSON Schema for brand-kit.json
 
 This repo is owned by the **Rock team** (`@TheCrossing-Church/rock-team`), which has admin access. `CODEOWNERS` assigns every path to that team. The IT team has read-only access on purpose, which is why it isn't listed as an owner.
 
-The process today is deliberately simple: **commit straight to `main`.** There's no branch protection and no required review. Brand changes are small and infrequent, so a bad one is easy to spot in the diff and undo:
+The process is deliberately simple: **commit straight to `main`.** Brand changes are small and infrequent, so a bad one is easy to spot in the diff and undo:
 
 ```bash
 git revert <commit>     # undo a commit, keeping the history honest
@@ -76,7 +76,7 @@ git log --stat          # see what changed, and when
 
 Pull requests are welcome if you want a second set of eyes — nothing requires one. Pushing to `main` republishes the site automatically (GitHub Pages), so check the site after a change.
 
-See the `governance` section of [`brand-kit.json`](brand-kit.json) for the same rules as data, and [`PRACTICES.md`](PRACTICES.md) for the tighter process we'd like to grow into once the team is comfortable.
+See [`PRACTICES.md`](PRACTICES.md) for the full how-to, and the `governance` section of [`brand-kit.json`](brand-kit.json) for the same rules as data.
 
 ## Related
 

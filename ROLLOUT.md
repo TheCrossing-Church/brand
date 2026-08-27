@@ -32,8 +32,8 @@ data and wiring the rest of the ecosystem to point here.
 - [ ] **Reconcile creative's "fuller" version** into this repo so there's a single source rather than two competing decks.
 - [ ] **Add editable design masters** (`.ai` / `.psd` / layered `.svg`) to `brand-internal/source/` — the folder exists but is empty.
 - [ ] **Tell the team** where this lives and how to change it: commit to `main`, or open an issue in the repo.
-- [ ] **Set a review rhythm.** No cadence is in force today; quarterly is the aim (see [`PRACTICES.md`](PRACTICES.md)).
-- [ ] **Flip the CI asset check from warn to fail** — `.github/workflows/validate.yml` still prints a `::warning::` for missing assets because it was written for the placeholder phase. Nothing is missing now, so changing it to `sys.exit(1)` would be a no-op today and would catch a broken reference tomorrow. Deliberately left as a decision, not a default (see [`PRACTICES.md`](PRACTICES.md)).
+- [ ] **Set a review rhythm.** Quarterly is the aim — put it on a calendar with an owner's name on it.
+- [ ] **Flip the CI asset check from warn to fail** — `.github/workflows/validate.yml` still prints a `::warning::` for missing assets because it was written for the placeholder phase. Nothing is missing now, so changing it to `sys.exit(1)` would be a no-op today and would catch a broken reference tomorrow. Deliberately left as a decision, not a default.
 
 ## For AI users
 
